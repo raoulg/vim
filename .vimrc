@@ -10,7 +10,7 @@ set background=dark
 colorscheme badwolf
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
-:imap jj <Esc>
+inoremap jj <Esc>
 set tabstop=4
 set expandtab
 set softtabstop=4
@@ -19,7 +19,7 @@ set autoindent
 set number
 set cursorline 		"highlight current line
 set wildmenu 		"visual autocomplete
-let maplocalleader=","
+let mapleader=","
 " recommended settings for syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -29,5 +29,12 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 " end recommended settings for syntastic
-noremap j gj
-noremap k gk
+nnoremap j gj
+nnoremap k gk
+set incsearch
+set hlsearch
+nnoremap <leader><space> :nohlsearch<CR>
+set foldmethod=indent
+nnoremap <leader>ev :vsp ~/.vim/.vimrc<CR>
+nnoremap <leader>ez :vsp ~/.zshrc<CR>
+nnoremap <leader>so :source ~/.vim/.vimrc<CR> 
