@@ -3,6 +3,7 @@ Plug 'rlue/vim-getting-things-down'
 Plug 'nightsense/simplifysimplify'
 Plug 'vim-latex/vim-latex'
 Plug 'vim-syntastic/syntastic'
+Plug 'mileszs/ack.vim'
 call plug#end()
 set backspace=indent,eol,start "fix backspac
 set t_Co=256
