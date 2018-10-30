@@ -38,3 +38,4 @@ set foldmethod=indent
 nnoremap <leader>ev :vsp ~/.vim/.vimrc<CR>
 nnoremap <leader>ez :vsp ~/.zshrc<CR>
 nnoremap <leader>so :source ~/.vim/.vimrc<CR> 
+let R_assign_map = '<M-->'
